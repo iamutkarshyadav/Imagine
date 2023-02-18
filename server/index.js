@@ -23,8 +23,8 @@ app.get('/', async (req, res) => {
 
 const startServer = async () => {
   try {
-    connectDB(process.env.MONGODB_URL);
-    app.listen(8080, () => console.log('Server started on port 8080'));
+    connectDB("mongodb+srv://shadowstorme:akarshyadav1970@clusterimagine.8lyzezu.mongodb.net/?retryWrites=true&w=majority");
+    app.listen(8080, () => console.log('https://localhost:8080'));
   } catch (error) {
     console.log(error);
   }
